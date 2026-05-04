@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>💱 Currency Converter
+            <span class="favorite" onclick="saveFavorite()"></span>
+        </h2>
+
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <!-- FROM -->
+        <div class="select-group">
+            <img id="fromFlag" class="flag">
+            <select id="fromCurrency"></select>
+        </div>
+
+        <!-- TO -->
+        <div class="select-group">
+            <img id="toFlag" class="flag">
+            <select id="toCurrency"></select>
+        </div>
+
+        <button class="swap-btn" onclick="swapCurrencies()">🔄 Swap</button>
+
+        <div class="result" id="result">Result will appear here</div>
+
+        <div class="history" id="history"></div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
